@@ -2,6 +2,7 @@ lockfileVersion: 5.3
 
 specifiers:
   '@kinde-oss/kinde-auth-nextjs': ^1.8.25
+  '@prisma/client': 5.6.0
   '@radix-ui/react-slot': ^1.0.2
   '@tailwindcss/typography': ^0.5.10
   '@tanstack/react-query': ^4.35.3
@@ -21,6 +22,7 @@ specifiers:
   mini-css-extract-plugin: ^2.7.6
   next: 13.5.6
   postcss: ^8
+  prisma: 5.6.0
   react: ^18
   react-dom: ^18
   tailwind-merge: ^1.14.0
@@ -31,6 +33,7 @@ specifiers:
 
 dependencies:
   '@kinde-oss/kinde-auth-nextjs': 1.8.25_react-dom@18.2.0+react@18.2.0
+  '@prisma/client': 5.6.0_prisma@5.6.0
   '@radix-ui/react-slot': 1.0.2_a4699fd93d6d4286ced289fc5b403c8a
   '@tailwindcss/typography': 0.5.10_tailwindcss@3.3.4
   '@tanstack/react-query': 4.36.1_react-dom@18.2.0+react@18.2.0
@@ -57,6 +60,7 @@ devDependencies:
   eslint-config-next: 13.5.6_eslint@8.52.0+typescript@5.2.2
   mini-css-extract-plugin: 2.7.6
   postcss: 8.4.31
+  prisma: 5.6.0
   tailwindcss: 3.3.4
   typescript: 5.2.2
 
@@ -327,6 +331,29 @@ packages:
     dependencies:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.15.0
+    dev: true
+
+  /@prisma/client/5.6.0_prisma@5.6.0:
+    resolution: {integrity: sha512-mUDefQFa1wWqk4+JhKPYq8BdVoFk9NFMBXUI8jAkBfQTtgx8WPx02U2HB/XbAz3GSUJpeJOKJQtNvaAIDs6sug==}
+    engines: {node: '>=16.13'}
+    requiresBuild: true
+    peerDependencies:
+      prisma: '*'
+    peerDependenciesMeta:
+      prisma:
+        optional: true
+    dependencies:
+      '@prisma/engines-version': 5.6.0-32.e95e739751f42d8ca026f6b910f5a2dc5adeaeee
+      prisma: 5.6.0
+    dev: false
+
+  /@prisma/engines-version/5.6.0-32.e95e739751f42d8ca026f6b910f5a2dc5adeaeee:
+    resolution: {integrity: sha512-UoFgbV1awGL/3wXuUK3GDaX2SolqczeeJ5b4FVec9tzeGbSWJboPSbT0psSrmgYAKiKnkOPFSLlH6+b+IyOwAw==}
+    dev: false
+
+  /@prisma/engines/5.6.0:
+    resolution: {integrity: sha512-Mt2q+GNJpU2vFn6kif24oRSBQv1KOkYaterQsi0k2/lA+dLvhRX6Lm26gon6PYHwUM8/h8KRgXIUMU0PCLB6bw==}
+    requiresBuild: true
     dev: true
 
   /@radix-ui/react-compose-refs/1.0.1_a4699fd93d6d4286ced289fc5b403c8a:
@@ -2310,6 +2337,15 @@ packages:
   /prelude-ls/1.2.1:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
+    dev: true
+
+  /prisma/5.6.0:
+    resolution: {integrity: sha512-EEaccku4ZGshdr2cthYHhf7iyvCcXqwJDvnoQRAJg5ge2Tzpv0e2BaMCp+CbbDUwoVTzwgOap9Zp+d4jFa2O9A==}
+    engines: {node: '>=16.13'}
+    hasBin: true
+    requiresBuild: true
+    dependencies:
+      '@prisma/engines': 5.6.0
     dev: true
 
   /prop-types/15.8.1:
